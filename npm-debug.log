@@ -1,0 +1,57 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'update' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly mapToRegistry name @composer-asset/yiisoft--yii-bootstrap4
+5 silly mapToRegistry scope (from package name) @composer-asset
+6 verbose mapToRegistry no registry URL found in name for scope @composer-asset
+7 silly mapToRegistry using default registry
+8 silly mapToRegistry registry https://registry.npmjs.org/
+9 silly mapToRegistry uri https://registry.npmjs.org/@composer-asset%2fyiisoft--yii-bootstrap4
+10 verbose request uri https://registry.npmjs.org/@composer-asset%2fyiisoft--yii-bootstrap4
+11 verbose request no auth needed
+12 info attempt registry request try #1 at 9:53:10 AM
+13 verbose request id b2cfc557ec7dedcc
+14 http request GET https://registry.npmjs.org/@composer-asset%2fyiisoft--yii-bootstrap4
+15 http 404 https://registry.npmjs.org/@composer-asset%2fyiisoft--yii-bootstrap4
+16 verbose headers { date: 'Fri, 17 Apr 2020 06:53:11 GMT',
+16 verbose headers   'content-type': 'application/json',
+16 verbose headers   'content-length': '21',
+16 verbose headers   connection: 'keep-alive',
+16 verbose headers   'set-cookie':
+16 verbose headers    [ '__cfduid=dada5db64bfe9ac0ad2ba8db25041cb1c1587106390; expires=Sun, 17-May-20 06:53:10 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+16 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+16 verbose headers   vary: 'Accept-Encoding',
+16 verbose headers   server: 'cloudflare',
+16 verbose headers   'cf-ray': '58543a3ef8cb7652-ARN',
+16 verbose headers   'cf-request-id': '022882bb5900007652dc16b200000001' }
+17 silly get cb [ 404,
+17 silly get   { date: 'Fri, 17 Apr 2020 06:53:11 GMT',
+17 silly get     'content-type': 'application/json',
+17 silly get     'content-length': '21',
+17 silly get     connection: 'keep-alive',
+17 silly get     'set-cookie':
+17 silly get      [ '__cfduid=dada5db64bfe9ac0ad2ba8db25041cb1c1587106390; expires=Sun, 17-May-20 06:53:10 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+17 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+17 silly get     vary: 'Accept-Encoding',
+17 silly get     server: 'cloudflare',
+17 silly get     'cf-ray': '58543a3ef8cb7652-ARN',
+17 silly get     'cf-request-id': '022882bb5900007652dc16b200000001' } ]
+18 verbose stack TypeError: Cannot read property 'version' of undefined
+18 verbose stack     at /usr/share/npm/lib/outdated.js:362:16
+18 verbose stack     at /usr/share/npm/node_modules/read-package-json/read-json.js:345:5
+18 verbose stack     at checkBinReferences_ (/usr/share/npm/node_modules/read-package-json/read-json.js:309:45)
+18 verbose stack     at final (/usr/share/npm/node_modules/read-package-json/read-json.js:343:3)
+18 verbose stack     at then (/usr/share/npm/node_modules/read-package-json/read-json.js:113:5)
+18 verbose stack     at ReadFileContext.<anonymous> (/usr/share/npm/node_modules/read-package-json/read-json.js:284:20)
+18 verbose stack     at ReadFileContext.callback (/usr/share/npm/node_modules/graceful-fs/graceful-fs.js:76:16)
+18 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:420:13)
+19 verbose cwd /var/www/app
+20 error Linux 4.4.0-18362-Microsoft
+21 error argv "/usr/bin/node" "/usr/bin/npm" "update"
+22 error node v8.10.0
+23 error npm  v3.5.2
+24 error Cannot read property 'version' of undefined
+25 error If you need help, you may report this error at:
+25 error     <https://github.com/npm/npm/issues>
+26 verbose exit [ 1, true ]
